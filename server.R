@@ -34,7 +34,10 @@ shinyServer (function(input, output, session) {
         xlab("Gerações") + 
         ylab("Frequência Alélica") + 
         ylim(0,1) + 
-        labs(colour = "Alelos")
+        labs(colour = "Alelos") +
+        theme(text = element_text(color = "grey20", size=14),
+              plot.title=element_text(size=18),
+              legend.text=element_text(size=14))
       
       print(gd)
       
